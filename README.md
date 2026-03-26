@@ -1,5 +1,7 @@
 # COM109-Coursework-2
 
+In this document, we will outline the main components of our website: the colours used, theme, and general ideas. 
+
 Website theme: CDs + DVDs. 50/50 split - 1 page of contents.
 
 Background: black. 
@@ -8,3 +10,4 @@ White header that stays at the top of the page. Options include: CDs, DVDs, revi
 
 Footer: copyright information + logo.
 
+Colour scheme: black, white, orange.
