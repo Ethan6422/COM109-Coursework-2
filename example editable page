@@ -1,0 +1,52 @@
+<!doctype html>
+<html>
+<title>Home Page</title>
+<meta name="web" content="." />
+<meta name=”keywords” content= “Web “Web”, “Website “HTML”, "Courses”, “Design”, “Web”/>
+
+<head>
+    <meta charset="utf-8">
+    <title>Index</title>
+    <link href="styles.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <img src="Images/New logo.png" width="300" height="170" alt="Logo" class="image">
+    </header>
+    <nav>
+        <a href="https://www.udemy.com/courses/development/web-development/">Web Development courses</a>
+        <a href=" profile.html">Company profile</a>
+        <a href=" profiles.html">Trainee profiles</a>
+        <a href="Job specifications and requirements.html">Job specifications and requirements</a>
+        <a href="Application form.html">Application form</a>
+    </nav>
+    <h1><em>Welcome</em>!</h1>
+    <div class="container">
+            <table width="1373" height="700" align="center">
+                <tbody>
+                        <td>
+                            <h3>Welcome to the Hot Beans landing page! This section of our website is dedicated to promoting interest and helping guide potential new hires to join our team.</h3>
+<p>To learn more about what we require from our employees and the specifications of their jobs check out our dedicated webpage from the navigation bar. To see where we are based check out the bottom left! To apply to join our team all you need to do is use the navigation buttons above to guide yourself to our application form. To learn more about our company itself go to the company profile to learn what we do and will tell you about our management team. To contact us please use the information that can be found on the bottom left.</p>
+					</td>
+                </tbody>
+				</table>
+</div>
+<div>
+        <table class="table">
+			<div class="container2">
+        <div class="table-container">
+			<div>
+                    <td> <h2><b>Find us!</b></h2>
+						<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3925.298616625719!2d-6.134091635766986!3d54.19784565100808!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4860df4c104c3811%3A0xbbac22403f9c2dfd!2sFegans%20Gardens%2C%20Hilltown%2C%20Newry%20BT34%205UN!5e0!3m2!1sen!2suk!4v1716462251891!5m2!1sen!2suk" width="1060" height="550" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></td>
+                    
+                    <td>
+                        <h2><b>Contact us</b></h2>
+                        <p>Please send any emails to HotbeansWeb@gmail.com</p>
+			<p>Or contact us via telephone at 028767676767</p>
+            </table>
+</div>
+        </div>
+</body>
+	<footer>Copyright Hot Beans 2024</footer>
+</html>
