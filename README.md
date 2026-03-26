@@ -11,3 +11,7 @@ White header that stays at the top of the page. Options include: CDs, DVDs, revi
 Footer: copyright information + logo. Mention that website is for educational purposes only, all rights reserved, etc.
 
 Colour scheme: black, white, orange.
+
+No individual report needed; all in one file.
+
+No copyright or credit needed, maybe add code notes.
