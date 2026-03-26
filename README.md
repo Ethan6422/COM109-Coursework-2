@@ -8,6 +8,6 @@ Background: black.
 
 White header that stays at the top of the page. Options include: CDs, DVDs, reviews, cart, contact us, etc.
 
-Footer: copyright information + logo. Mention that ebsite is for educational purposes only, all rights reserved, etc.
+Footer: copyright information + logo. Mention that website is for educational purposes only, all rights reserved, etc.
 
 Colour scheme: black, white, orange.
