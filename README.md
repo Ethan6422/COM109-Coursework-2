@@ -5,3 +5,6 @@ Website theme: CDs + DVDs. 50/50 split - 1 page of contents.
 Background: black. 
 
 White header that stays at the top of the page. Options include: CDs, DVDs, reviews, cart, contact us, etc.
+
+Footer: copyright information + logo.
+
