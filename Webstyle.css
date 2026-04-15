@@ -22,6 +22,10 @@ header img {
     height: 50px;
   }
 
+h1 {
+    color: white;
+}
+
 nav a {
     color: orange;
     margin-right: 15px;
