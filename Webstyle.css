@@ -1,0 +1,50 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: black;
+  }
+
+header {
+    background-color: white;
+    color: white;
+    padding: 15px 20px;
+    position: sticky; /* this is the magic */
+    top: 0;           /* distance from top */
+    z-index: 1000;    /* make sure it’s above other content */
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+header img {
+    height: 50px;
+  }
+
+nav a {
+    color: orange;
+    margin-right: 15px;
+    text-decoration: none;
+  }
+
+main {
+    padding: 20px;
+  }
+
+section {
+    height: 600px; /* just to make scrolling happen */
+    border-bottom: 1px solid #ccc;
+  }
+  /* Container for logo + title */
+.logo-title {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* space between logo and title */
+}
+
+.site-title {
+  font-size: 24px;
+  font-weight: bold;
+  color: orange;
+  font-family: Georgia, 'Times New Roman', serif;
+}
