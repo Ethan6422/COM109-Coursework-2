@@ -15,3 +15,5 @@ Colour scheme: black, white, orange.
 No individual report needed; all in one file.
 
 No copyright or credit needed, maybe add code notes.
+
+HOMEPAGE: Have an about me, then below it have the top couple CDs DVDs and maybe rotate it using js. 
