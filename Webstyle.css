@@ -9,9 +9,9 @@ header {
     background-color: Black;
     color: white;
     padding: 15px 20px;
-    position: sticky; /* this is the magic */
-    top: 0;           /* distance from top */
-    z-index: 1000;    /* make sure it’s above other content */
+    position: sticky; 
+    top: 0;           
+    z-index: 1000;  
 
     display: flex;
     align-items: center;
@@ -33,14 +33,14 @@ main {
   }
 
 section {
-    height: 600px; /* just to make scrolling happen */
+    height: 600px; 
     border-bottom: 1px solid #ccc;
   }
-  /* Container for logo + title */
+
 .logo-title {
   display: flex;
   align-items: center;
-  gap: 10px; /* space between logo and title */
+  gap: 10px; 
 }
 
 .site-title {
