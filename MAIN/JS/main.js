@@ -1,9 +1,9 @@
 const images = [
-  "img1.jpg",
-  "img2.jpg",
-  "img3.jpg",
-  "img4.jpg",
-  "img5.jpg"
+  "../IMAGES/MOVIES/scream.jpg",
+  "../IMAGES/CDS/Bladerunner OST.png",
+  "../IMAGES/MOVIES/wolfOfWallStreet.jpg",
+  "../IMAGES/CDS/Hades.png",
+  "../IMAGES/MOVIES/rambo.jpg"
 ];
 
 let startIndex = 0;
@@ -23,14 +23,12 @@ function renderCarousel() {
 }
 
 function moveSlide(direction) {
-  console.log("carousel script running");
   startIndex = (startIndex + direction + images.length) % images.length;
   renderCarousel();
   
 }
 
 renderCarousel();
-console.log("carousel script running");
 
 setInterval(() => {
   moveSlide(1);
