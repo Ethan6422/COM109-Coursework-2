@@ -1,95 +1,363 @@
+
 body {
+
     margin: 0;
+
     font-family: Arial, sans-serif;
+
     background: black;
+
     color: white;
+
 }
+
+ 
 
 header {
+
     background-color: white;
+
     color: white;
+
     padding: 15px 20px;
-    position: sticky; 
-    top: 0;           
-    z-index: 1000;  
+
+    position: sticky;
+
+    top: 0;
+
+    z-index: 1000;
 
     display: flex;
+
     align-items: center;
+
     justify-content: space-between;
-  }
+
+}
+
+ 
 
 header img {
+
     height: 50px;
-  }
 
-h1 {
-    color: white;
-    text-align: center;
 }
 
-p { 
-  color: white;
-  text-align: justify;
-}
-
-.topCD {
-  color: white;
-  text-align: center;
-}
-
-nav a {
-    color: f46106;
-    margin-right: 15px;
-    text-decoration: none;
-  }
-
-main {
-    padding: 20px;
-  }
-
-section {
-    height: 600px; 
-    border-bottom: 1px solid #ccc;
-  }
+ 
 
 .logo-title {
-  display: flex;
-  align-items: center;
-  gap: 10px; 
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+
 }
+
+ 
 
 .site-title {
-  font-size: 24px;
-  font-weight: bold;
-  color: orange;
-  font-family: Georgia, 'Times New Roman', serif;
+
+    font-size: 24px;
+
+    font-weight: bold;
+
+    color: orange;
+
+    font-family: Georgia, 'Times New Roman', serif;
+
 }
+
+ 
+
+nav a {
+
+    color: #f46106; /* Added missing # */
+
+    margin-right: 15px;
+
+    text-decoration: none;
+
+    font-weight: bold;
+
+}
+
+ 
+
+nav a:hover {
+
+    text-decoration: underline;
+
+}
+
+ 
+
+h1, .topCD {
+
+    color: white;
+
+    text-align: center;
+
+}
+
+ 
+
+p {
+
+    color: white;
+
+    text-align: justify;
+
+}
+
+ 
+
+main {
+
+    padding: 20px;
+
+}
+
+ 
+
+footer {
+
+    text-align: center;
+
+    padding: 20px;
+
+    border-top: 1px solid #333;
+
+}
+
+
+.product-grid {
+
+    display: flex;
+
+    flex-wrap: wrap;
+
+    justify-content: center;
+
+    gap: 30px;
+
+    padding: 40px 0;
+
+}
+
+ 
+
+.cd-card {
+
+    background: #1a1a1a;
+
+    border: 1px solid #333;
+
+    border-radius: 12px;
+
+    width: 300px;
+
+    overflow: hidden;
+
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+    text-align: center;
+
+}
+
+ 
+
+.cd-card:hover {
+
+    transform: translateY(-10px);
+
+    box-shadow: 0 10px 20px rgba(244, 97, 6, 0.3); 
+
+}
+
+ 
+
+.img-wrapper img {
+
+    width: 100%;
+
+    height: 300px;
+
+    object-fit: cover;
+
+}
+
+ 
+
+.cd-info {
+
+    padding: 20px;
+
+}
+
+ 
+
+.cd-info .title-row {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    gap: 10px;
+
+    margin-bottom: 10px;
+
+}
+
+
+.cd-info h3 {
+
+    font-size: 1.1rem;
+
+    margin: 0;
+
+    color: white;
+
+}
+
+
+.price {
+
+    font-size: 1.4rem;
+
+    font-weight: bold;
+
+    color: #f46106; /* Matching your nav color */
+
+    margin: 0;
+
+    font-weight: bold;
+
+    color: #f46106; /* Matching your nav color */
+
+    margin-bottom: 5px;
+
+}
+
+ 
+
+.meta {
+
+    font-size: 0.85rem;
+
+    color: #bbb;
+
+    margin: 2px 0;
+
+}
+
+ 
+
+.buy-btn {
+
+    background-color: #f46106;
+
+    color: white;
+
+    border: none;
+
+    padding: 12px 25px;
+
+    border-radius: 5px;
+
+    margin-top: 15px;
+
+    cursor: pointer;
+
+    font-weight: bold;
+
+    width: 100%;
+
+    text-transform: uppercase;
+
+}
+
+ 
+
+.buy-btn:hover {
+
+    background-color: #ff7b29;
+
+}
+
+
+button,
+.buy-btn,
+nav a {
+
+    outline: none;
+
+}
+
+button:focus,
+.buy-btn:focus,
+nav a:focus {
+
+    outline: none;
+
+    box-shadow: none;
+
+}
+ 
 
 .carousel-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
-  width: 100%;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    gap: 10px;
+
+    width: 100%;
+
 }
+
+ 
 
 .carousel {
-  display: flex;
-  gap: 10px;
+
+    display: flex;
+
+    gap: 10px;
+
 }
+
+ 
 
 .carousel img {
-  width: 200px;
-  height: 150px;
-  object-fit: cover;
 
-  opacity: 0;
-  animation: fadeSlide 1.25s ease forwards;
+    width: 200px;
+
+    height: 150px;
+
+    object-fit: cover;
+
+    opacity: 0;
+
+    animation: fadeSlide 1.25s ease forwards;
+
 }
 
+ 
+
 @keyframes fadeSlide {
-  to {
-    opacity: 1;
-    transform: translateX(0);
-  }
+
+    to {
+
+        opacity: 1;
+
+        transform: translateX(0);
+
+    }
+
 }
