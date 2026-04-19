@@ -153,6 +153,10 @@ function checkout() {
     addressField.value = "";
     cardField.value = "";
 
+    let orderID = Math.floor(Math.random() * 10000);
+
+    successMsg.textContent = "Order #" + orderID + " placed successfully";
+
     successMsg.style.display = "block";
 }
 document.addEventListener("DOMContentLoaded", function () {
