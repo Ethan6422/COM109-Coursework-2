@@ -163,9 +163,9 @@ footer {
 
 .carousel img {
 
-    width: 200px;
+    width: 400px;
 
-    height: 150px;
+    height: 550px;
 
     object-fit: cover;
 
@@ -173,8 +173,132 @@ footer {
 
     animation: fadeSlide 1.25s ease forwards;
 
+    border-radius: 18px;
+
+}
+
+
+
+.carousel-container button {
+
+    background-color: #f46106;
+
+    color: white;
+
+    border: none;
+
+    padding: 12px 25px;
+
+    border-radius: 5px;
+
+    margin-top: 15px;
+
+    cursor: pointer;
+
+    font-weight: bold;
+
+    width: 50px;
+
+    height: 50px;
+
+    text-transform: uppercase;
+
+    text-align: center;
+}
+
+
+
+.carousel-container button:hover{
+
+    opacity: 0.9;
+
 }
 /* END OF CAROUSEL */
+
+
+
+/* HOME PAGE STYLING */
+section {
+
+    height: 650px;
+
+    border-bottom: solid 1px;
+
+}
+
+
+
+.grid-container {
+    
+    align-items: center;
+
+    align-content: center;
+
+    justify-content: center;
+
+    text-align: center;
+
+}
+
+
+
+.grid-container img {
+
+    height: 350px;
+
+    width: 20%;
+
+    border-radius: 18px;
+
+    padding-left: 20px;
+
+    padding-right: 20px;
+
+    align-items: center;
+
+}
+
+
+
+.goReview {
+
+    color: white;
+
+    background-color: #f46106;
+
+    border-radius: 12px;
+
+    height: 75px;
+
+    width: 10%;
+
+    font-size: 22px;
+
+    justify-content: center;
+
+    margin-top: 30px;
+
+    cursor: pointer;
+
+}
+
+
+
+.ReviewButton {
+
+    text-align: center;
+
+}
+
+
+
+.ReviewButton button:hover {
+
+    opacity: 0.9;
+
+}
+
+/*END OF HOME PAGE STYLING*/
 
 
 
