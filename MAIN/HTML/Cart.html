@@ -1,1 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spinscore - Cart</title>
 
+    <link rel="stylesheet" href="../CSS/Webstyle.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo-title">
+            <a href="Index.html">
+                <img src="../IMAGES/Logo.png" alt="Logo">
+            </a>
+            <span class="site-title">Spinscore</span>
+        </div>
+
+        <nav>
+            <a href="Index.html">Home</a>
+            <a href="cds.html">CDs</a>
+            <a href="cart.html">Cart</a>
+            <a href="Contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Your Cart</h1>
+
+        <div id="cart-items"></div>
+
+        <h2 id="cart-total">Total: £0.00</h2>
+
+        <button onclick="clearCart()" class="buy-btn">Clear Cart</button>
+    </main>
+
+    <footer>
+        <p>&copy; Spinscore 2026</p>
+    </footer>
+
+    <script src="../JS/cart.js"></script>
+</body>
+</html>
