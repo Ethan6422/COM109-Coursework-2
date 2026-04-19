@@ -1,4 +1,4 @@
-
+/* UNIVERSAL: USED IN ALL WEBPAGES */
 body {
 
     margin: 0;
@@ -11,7 +11,7 @@ body {
 
 }
 
- 
+
 
 header {
 
@@ -130,8 +130,57 @@ footer {
     border-top: 1px solid #333;
 
 }
+/* END OF UNIVERSAL */
 
 
+
+/* CAROUSEL USED ON HOME PAGE */
+.carousel-container {
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    gap: 10px;
+
+    width: 100%;
+
+}
+
+ 
+
+.carousel {
+
+    display: flex;
+
+    gap: 10px;
+
+}
+
+ 
+
+.carousel img {
+
+    width: 200px;
+
+    height: 150px;
+
+    object-fit: cover;
+
+    opacity: 0;
+
+    animation: fadeSlide 1.25s ease forwards;
+
+}
+/* END OF CAROUSEL */
+
+
+
+/* ### CD AND DVD STYLING ### */
+
+/* USED TO STYLE THE CD AND DVD PAGE */
 .product-grid {
 
     display: flex;
@@ -196,7 +245,7 @@ footer {
 
 }
 
- 
+
 
 .cd-info .title-row {
 
@@ -213,6 +262,7 @@ footer {
 }
 
 
+
 .cd-info h3 {
 
     font-size: 1.1rem;
@@ -222,6 +272,7 @@ footer {
     color: white;
 
 }
+
 
 
 .price {
@@ -280,13 +331,14 @@ footer {
 
 }
 
- 
+
 
 .buy-btn:hover {
 
     background-color: #ff7b29;
 
 }
+
 
 
 button,
@@ -297,6 +349,8 @@ nav a {
 
 }
 
+
+
 button:focus,
 .buy-btn:focus,
 nav a:focus {
@@ -306,49 +360,8 @@ nav a:focus {
     box-shadow: none;
 
 }
- 
 
-.carousel-container {
 
-    display: flex;
-
-    justify-content: center;
-
-    align-items: center;
-
-    gap: 10px;
-
-    width: 100%;
-
-}
-
- 
-
-.carousel {
-
-    display: flex;
-
-    gap: 10px;
-
-}
-
- 
-
-.carousel img {
-
-    width: 200px;
-
-    height: 150px;
-
-    object-fit: cover;
-
-    opacity: 0;
-
-    animation: fadeSlide 1.25s ease forwards;
-
-}
-
- 
 
 @keyframes fadeSlide {
 
@@ -361,3 +374,291 @@ nav a:focus {
     }
 
 }
+/* END OF CD + DVD STYLING */
+
+
+
+/* ### CONTACT FORM STYLING ### */
+
+/* FORM WRAPPER: AFFECTS THE CONTACT FORM'S DESIGN */
+.form-wrapper {
+    max-width: 520px;
+
+    margin: 60px auto;
+
+    padding: 40px;
+
+    background: #111;
+
+    border: 1px solid #2a2a2a;
+
+    border-radius: 16px;
+
+    box-sizing: border-box;
+
+}
+
+
+
+.form-eyebrow {
+
+    font-size: 12px;
+
+    font-weight: 600;
+
+    letter-spacing: 0.1em;
+
+    text-transform: uppercase;
+
+    color: orange;
+
+    margin: 0 0 10px;
+
+}
+
+
+
+h1.form-title {
+
+    font-size: 25px;
+
+    font-weight: 500;
+
+    line-height: 1.2;
+
+    color: white;
+
+    display: inline-block;
+
+    vertical-align: middle;
+
+}
+/* END OF FORM WRAPPER */
+
+
+
+/* FORM FIELDS: AFFECTS THE FIELDS */
+.form-fields {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 1.25rem;
+
+}
+
+
+
+label {
+    display: block;
+
+    font-size: 13px;
+
+    font-weight: 500;
+
+    color: #aaa;
+
+    margin-bottom: 6px;
+
+    letter-spacing: 0.04em;
+
+}
+
+
+
+input[type="text"],
+input[type="email"],
+    textarea {
+
+        width: 100%;
+
+        box-sizing: border-box;
+
+        padding: 10px 14px;
+
+        font-size: 15px;
+
+        border: 1px solid #333;
+
+        border-radius: 8px;
+
+        background: #1a1a1a;
+
+        color: #f0f0f0;
+
+        outline: none;
+
+        transition: border-color 0.15s, box-shadow 0.15s;
+
+        font-family: Arial, sans-serif;
+
+}
+
+
+
+input[type="text"]::placeholder,
+input[type="email"]::placeholder,
+textarea::placeholder {
+
+        color: #555;
+
+}
+ 
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+
+    border-color: orange;
+
+    box-shadow: 0 0 0 3px rgba(255, 165, 0, 0.12);
+
+}
+
+
+
+textarea {
+
+    resize: vertical;
+
+}
+/* END OF FORM FIELDS */
+
+
+
+/* ERROR STYLES FOR THE FORM */
+input.error, textarea.error {
+    border-color: #e05252;
+
+    box-shadow: 0 0 0 3px rgba(224, 82, 82, 0.18);
+
+}
+
+
+
+.field-error {
+
+    display: none;
+
+    margin-top: 5px;
+
+    font-size: 12px;
+
+    color: #e05252;
+
+    font-weight: 500;
+
+}
+
+
+
+.field-error.visible {
+
+    display: block;
+
+}
+/* END OF ERROR STYLES */
+
+
+
+/* FORM FOOTER STYLE */
+.form-footer {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    margin-top: 0.5rem;
+
+    flex-wrap: wrap;
+
+    gap: 12px;
+
+}
+
+
+
+.form-note {
+
+    font-size: 12px;
+
+    color: #555;
+
+    margin: 0;
+
+}
+
+
+
+.submit-btn {
+
+    padding: 0 1.5rem;
+
+    height: 38px;
+
+    background: orange;
+
+    color: #fff;
+
+    border: none;
+
+    border-radius: 8px;
+
+    font-size: 14px;
+
+    font-weight: 700;
+
+    cursor: pointer;
+
+    transition: opacity 0.15s;
+
+    letter-spacing: 0.02em;
+
+}
+
+
+
+.submit-btn:hover {
+
+    opacity: 0.85;
+
+}
+
+
+
+.submit-btn:disabled {
+
+    opacity: 0.4;
+
+    cursor: default;
+
+}
+/* END OF FOOTER STYLE */
+
+
+ 
+/* SUCCESS MESSAGE STYLING */
+.success-msg {
+
+    display: none;
+
+    margin-top: 1.5rem;
+
+    padding: 14px 18px;
+
+    background: rgba(255, 165, 0, 0.1);
+
+    border: 1px solid rgba(255, 165, 0, 0.35);
+
+    border-radius: 8px;
+
+    color: orange;
+
+    font-size: 14px;
+
+    font-weight: 500;
+
+}
+/* END OF CONTACT FORM STYLING */
