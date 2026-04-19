@@ -81,7 +81,80 @@ function clearCart() {
 
     displayCart();
 }
+function checkout() {
+    let cart = getCart();
 
+    let nameField = document.getElementById("customer-name");
+    let emailField = document.getElementById("customer-email");
+    let addressField = document.getElementById("customer-address");
+    let cardField = document.getElementById("card-number");
+
+    let nameError = document.getElementById("name-error");
+    let emailError = document.getElementById("email-error");
+    let addressError = document.getElementById("address-error");
+    let cardError = document.getElementById("card-error");
+
+    let successMsg = document.getElementById("checkout-success");
+
+    if (!nameField || !emailField || !addressField || !cardField) return;
+
+    let valid = true;
+
+    nameError.classList.remove("visible");
+    emailError.classList.remove("visible");
+    addressError.classList.remove("visible");
+    cardError.classList.remove("visible");
+
+    nameField.classList.remove("error");
+    emailField.classList.remove("error");
+    addressField.classList.remove("error");
+    cardField.classList.remove("error");
+
+    successMsg.style.display = "none";
+
+    if (cart.length === 0) {
+        alert("Your cart is empty");
+        return;
+    }
+
+    if (nameField.value.trim() === "") {
+        nameField.classList.add("error");
+        nameError.classList.add("visible");
+        valid = false;
+    }
+
+    if (emailField.value.trim() === "" || !emailField.value.includes("@")) {
+        emailField.classList.add("error");
+        emailError.classList.add("visible");
+        valid = false;
+    }
+
+    if (addressField.value.trim() === "") {
+        addressField.classList.add("error");
+        addressError.classList.add("visible");
+        valid = false;
+    }
+
+    if (cardField.value.trim() === "") {
+        cardField.classList.add("error");
+        cardError.classList.add("visible");
+        valid = false;
+    }
+
+    if (!valid) {
+        return;
+    }
+
+    localStorage.removeItem("cart");
+    displayCart();
+
+    nameField.value = "";
+    emailField.value = "";
+    addressField.value = "";
+    cardField.value = "";
+
+    successMsg.style.display = "block";
+}
 document.addEventListener("DOMContentLoaded", function () {
 
     let buttons = document.querySelectorAll(".buy-btn");
