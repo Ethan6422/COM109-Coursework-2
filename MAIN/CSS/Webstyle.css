@@ -147,6 +147,10 @@ footer {
 
     width: 100%;
 
+    max-width: 1400px;
+
+    margin: 0 auto;
+
 }
 
  
@@ -222,7 +226,7 @@ section {
 
     height: 650px;
 
-    border-bottom: solid 1px;
+    border-bottom: solid 1px #2a2a2a;
 
 }
 
@@ -244,9 +248,9 @@ section {
 
 .grid-container img {
 
-    height: 350px;
+    height: 400px;
 
-    width: 20%;
+    max-width: 550px;
 
     border-radius: 18px;
 
@@ -297,6 +301,122 @@ section {
     opacity: 0.9;
 
 }
+
+
+
+#section1 {
+
+    text-align: center;
+
+}
+
+
+
+#section1 h1 {
+
+    font-size: 42px;
+
+    margin-bottom: 20px;
+
+}
+
+
+
+#section1 p {
+
+    max-width: 950px;
+
+    margin: 0 auto;
+
+    line-height: 1.7;
+
+    font-size: 18px;
+
+}
+
+
+
+#section1 h2 {
+
+    margin-top: 55px;
+
+    margin-bottom: 30px;
+
+    font-size: 34px;
+
+}
+
+
+
+.whyBuyGrid {
+
+    display: flex;
+
+    justify-content: center;
+
+    flex-wrap: wrap;
+
+    gap: 25px;
+
+    max-width: 1400px;
+
+    margin: 0 auto;
+
+    padding: 0 20px;
+
+}
+
+
+
+.whyBox {
+
+    width: 280px;
+
+    background-color: #111;
+
+    border: 1px solid #2a2a2a;
+
+    border-radius: 18px;
+
+    padding: 30px 20px;
+
+    transition: 0.25s ease;
+
+}
+
+
+
+.whyBox:hover {
+
+    transform: translateY(-6px);
+
+    border-color: #f46106;
+
+}
+
+
+
+.whyBox h3 {
+
+    color: #f46106;
+
+    font-size: 24px;
+
+    margin-bottom: 15px;
+
+}
+
+
+
+.whyBox p {
+
+    font-size: 16px;
+
+    line-height: 1.6;
+
+}
+
+
 
 /*END OF HOME PAGE STYLING*/
 
