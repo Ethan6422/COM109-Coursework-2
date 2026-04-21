@@ -130,6 +130,16 @@ footer {
     border-top: 1px solid #333;
 
 }
+
+
+
+nav a.active {
+
+    color: blue;
+
+    font-weight: bold;
+
+}
 /* END OF UNIVERSAL */
 
 
@@ -258,9 +268,9 @@ section {
 
 .grid-container img {
 
-    height: 400px;
+    height: 375px;
 
-    max-width: 550px;
+    max-width: 500px;
 
     border-radius: 18px;
 
@@ -284,7 +294,7 @@ section {
 
     height: 75px;
 
-    width: 10%;
+    width: 125px;
 
     font-size: 22px;
 
@@ -1085,3 +1095,168 @@ input.error, textarea.error {
   }
 
 /*END OF REVIEW FORM STYLING*/
+
+
+
+/* CONTRAST TOGGLE BUTTON */
+#contrastBtn {
+
+    background-color: #f46106;
+
+    color: white;
+
+    border: none;
+
+    padding: 10px 16px;
+
+    border-radius: 8px;
+
+    cursor: pointer;
+
+    font-weight: bold;
+
+}
+
+
+
+#contrastBtn:hover {
+
+    opacity: 0.9;
+
+}
+
+
+
+/* HIGH CONTRAST MODE */
+body.contrast-mode {
+
+    background: #000;
+
+    color: #fff;
+
+}
+
+
+
+body.contrast-mode header {
+
+    background: #000;
+
+    border-bottom: 2px solid yellow;
+
+}
+
+
+
+body.contrast-mode h1,
+body.contrast-mode h2,
+body.contrast-mode h3,
+body.contrast-mode p,
+body.contrast-mode label,
+body.contrast-mode span {
+
+    color: #fff;
+
+}
+
+
+
+body.contrast-mode nav a {
+
+    color: yellow;
+
+}
+
+
+
+body.contrast-mode nav a.active {
+
+    color: blue;
+
+    font-weight: bold;
+
+}
+
+
+
+body.contrast-mode nav a:hover {
+
+    text-decoration: underline;
+
+}
+
+
+
+body.contrast-mode section,
+body.contrast-mode footer {
+
+    border-color: yellow;
+
+}
+
+
+
+body.contrast-mode .whyBox,
+body.contrast-mode .cd-card,
+body.contrast-mode .form-wrapper,
+body.contrast-mode .review-form {
+
+    background: #000;
+
+    border: 2px solid yellow;
+
+}
+
+
+
+body.contrast-mode .buy-btn,
+body.contrast-mode .submit-btn,
+body.contrast-mode .goReview,
+body.contrast-mode button {
+
+    background: yellow;
+
+    color: black;
+
+    font-weight: bold;
+
+}
+
+
+
+body.contrast-mode input,
+body.contrast-mode textarea,
+body.contrast-mode select {
+
+    background: #000;
+
+    color: white;
+
+    border: 2px solid yellow;
+    
+}
+
+
+
+body.contrast-mode .review-card {
+
+    background: white;
+
+    border-radius: 16px;
+
+    overflow: hidden;
+
+    box-shadow: 0 4px 10px yellow;
+
+  }
+
+
+
+  body.contrast-mode #rating,
+  body.contrast-mode  {
+
+    background-color: black;
+
+    color: #555
+
+  }
