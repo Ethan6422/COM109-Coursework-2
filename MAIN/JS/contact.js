@@ -98,4 +98,4 @@ function handleSubmit(btn) {
     btn.textContent = 'Sent';
     btn.disabled    = true;
     document.getElementById('success-msg').style.display = 'block';
-}
+
