@@ -5,7 +5,7 @@ const images = [
   "../IMAGES/CDS/Hades.png",
   "../IMAGES/MOVIES/rambo.jpg",
   "../IMAGES/MOVIES/hacksaw.jpg",
-  "../IMAGES/CDSbrat but different.jpg"
+  "../IMAGES/CDS/brat but different.jpg"
 ];
 
 let startIndex = 0;
