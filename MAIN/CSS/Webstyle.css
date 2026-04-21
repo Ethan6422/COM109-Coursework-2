@@ -167,9 +167,15 @@ footer {
 
 .carousel img {
 
-    width: 400px;
+    width: 28vw;
 
-    height: 550px;
+    max-width: 400px;
+
+    min-width: 140px
+
+    height: auto;
+
+    aspect-ratio: 4 / 5.5;
 
     object-fit: cover;
 
@@ -224,9 +230,13 @@ footer {
 /* HOME PAGE STYLING */
 section {
 
-    height: 650px;
+    min-height: 300px;
+
+    height: auto;
 
     border-bottom: solid 1px #2a2a2a;
+
+    padding-bottom: 40px;
 
 }
 
