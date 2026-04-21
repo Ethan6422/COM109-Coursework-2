@@ -35,13 +35,12 @@ function startAutoSlide() {
 
 function moveSlide(direction, resetTimer = true) {
   startIndex = (startIndex + direction + images.length) % images.length;
-  renderCarousel();
   
-}
+  renderCarousel();
 
 if (resetTimer) { //if they push a button, then reset
   startAutoSlide();
-}
+  }
 }
 renderCarousel();
 startAutoSlide();
