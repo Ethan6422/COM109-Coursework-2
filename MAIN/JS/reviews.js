@@ -24,5 +24,6 @@ form.addEventListener('submit', function(e) {
   }
 
   errorMsg.textContent = 'Review submitted successfully!';
+  alert('Thank you for submitting your review!');
   form.reset();
 });
