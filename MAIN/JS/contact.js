@@ -94,8 +94,3 @@ function handleSubmit(btn) {
     clearFields();
     showSuccess(btn);
 }
-
-    btn.textContent = 'Sent';
-    btn.disabled = true;
-    document.getElementById('success-msg').style.display = 'block';
-
