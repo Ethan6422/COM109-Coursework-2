@@ -25,7 +25,7 @@ function clearFieldError(field, error) {
 
 // Checks if the 'name' field is empty. If so, it returns an error
 function validateName() {
-    const field   = document.getElementById('name');
+    const field = document.getElementById('name');
     const error = document.getElementById('name-error');
 
     if (!field.value.trim()) {
