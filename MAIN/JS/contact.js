@@ -39,9 +39,9 @@ function validateName() {
 
 // Checks if the 'email' field is not empty, and that it contains an '@' character. If not, it returns an error
 function validateEmail() {
-    const field   = document.getElementById('email');
+    const field = document.getElementById('email');
     const error = document.getElementById('email-error');
-    const value   = field.value.trim();
+    const value = field.value.trim();
 
     if (!value) {
         setFieldError(field, error, 'Please enter your email address.');
@@ -59,7 +59,7 @@ function validateEmail() {
 
 // Checks if the 'comment' field is empty. If so, it returns an error
 function validateComment() {
-    const field   = document.getElementById('comment');
+    const field = document.getElementById('comment');
     const error = document.getElementById('comment-error');
 
     if (!field.value.trim()) {
@@ -73,8 +73,8 @@ function validateComment() {
 
 // Runs all the validators and returns 'true' if all are valid
 function validateForm() {
-    const nameValid    = validateName();
-    const emailValid   = validateEmail();
+    const nameValid = validateName();
+    const emailValid = validateEmail();
     const commentValid = validateComment();
 
     return nameValid && emailValid && commentValid;
@@ -83,7 +83,7 @@ function validateForm() {
 // Updates the UI when the 'send message' button has been pressed
 function showSuccess(btn) {
     btn.textContent = 'Sent';
-    btn.disabled    = true;
+    btn.disabled = true;
     document.getElementById('success-msg').style.display = 'block';
 }
 
@@ -96,6 +96,6 @@ function handleSubmit(btn) {
 }
 
     btn.textContent = 'Sent';
-    btn.disabled    = true;
+    btn.disabled = true;
     document.getElementById('success-msg').style.display = 'block';
 
